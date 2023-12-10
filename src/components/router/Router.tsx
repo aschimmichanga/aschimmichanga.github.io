@@ -2,7 +2,7 @@ import { Dialog } from '@headlessui/react';
 import { lazy, Suspense, useState } from 'react';
 import { Outlet, RouteObject, useRoutes, BrowserRouter } from 'react-router-dom';
 
-const Loading = () => <p className="p-4 w-full h-full text-center">Loading...</p>;
+const Loading = () => <div className="p-4 w-full h-full text-center"><span className="loading loading-infinity loading-lg text-accent" /></div>;
 
 const IndexScreen = lazy(() => import('~/components/screens/Index'));
 const Page404Screen = lazy(() => import('~/components/screens/404'));
@@ -10,11 +10,11 @@ const Page404Screen = lazy(() => import('~/components/screens/404'));
 function Layout() {
   return (
     <div>
-      <nav className="p-4 flex items-center justify-between">
+      < nav className="p-4 flex items-center justify-between" >
         <span>Header</span>
-      </nav>
+      </nav >
       <Outlet />
-    </div>
+    </div >
   );
 }
 

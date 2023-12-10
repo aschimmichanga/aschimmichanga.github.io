@@ -17,6 +17,15 @@ module.exports = {
       '120': '30rem',
       '160': '40rem',
       '200': '50rem',
+    },
+    extend: {
+      backgroundImage: {
+        // bg-space-background"
+        'space-background': "url('/src/assets/space_bg.svg')"
+      },
+      fontFamily: {
+        'spicy-rice': ['"Spicy Rice"', 'cursive'],
+      },
     }
   },
   variants: {},
@@ -25,7 +34,7 @@ module.exports = {
   ],
   daisyui: {
     themes: [
-      'emerald'
+      'night'
     ],
   }
 }
