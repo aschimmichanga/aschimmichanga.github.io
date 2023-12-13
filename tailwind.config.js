@@ -20,12 +20,15 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        // bg-space-background"
         'space-background': "url('/src/assets/space_bg.svg')"
       },
       fontFamily: {
-        'spicy-rice': ['"Spicy Rice"', 'cursive'],
+        'spicy-rice': ['Spicy Rice', 'cursive'],
+        'space-mono': ['Space Mono', 'monospace'],
       },
+      colors: {
+        'cloud-pink': '#EFC3F5'
+      }
     }
   },
   variants: {},

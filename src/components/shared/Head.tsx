@@ -7,6 +7,7 @@ type Props = {
 
 const SERVICE_NAME = import.meta.env.VITE_SERVICE_NAME
 
+// TODO: SEO Optimization
 export const Head = ({ title, description }: Props) => (
   <Helmet>
     <title>{`${title} | ${SERVICE_NAME}`}</title>

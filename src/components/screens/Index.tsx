@@ -1,12 +1,14 @@
 import { Head } from '~/components/shared/Head';
+import myImage from './path/to/image.png';
+import Header from '../sections/Header';
+import Home from '../sections/Home';
 
 function Index() {
-
   return (
     <>
-      <Head title="TOP PAGE" />
-      <div className="bg-space-background bg-cover bg-fixed bg-center h-screen">
-      </div>
+      <Head title="HOME PAGE" />
+      <Header />
+      <Home />
     </>
   );
 }

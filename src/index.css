@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -15,4 +20,70 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.name-text-mask {
+  background-image: url('assets/graffiti-mask.svg');
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(-15px);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+.scrolling-text-container {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  white-space: nowrap;
+}
+
+.primary,
+.secondary {
+  position: absolute;
+  bottom: 0;
+  white-space: nowrap;
+}
+
+.primary {
+  animation: primary 10s linear infinite;
+}
+
+.secondary {
+  animation: secondary 10s linear infinite;
+}
+
+@keyframes primary {
+  from {
+    left: 0%;
+  }
+
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes secondary {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 0%;
+  }
 }
