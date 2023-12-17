@@ -2,8 +2,6 @@ import starMenu from '~/assets/star-menu.svg';
 import githubIcon from '~/assets/icons/github.svg';
 import resumeIcon from '~/assets/icons/resume.svg';
 import linkedinIcon from '~/assets/icons/linkedin.svg';
-import { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 interface LinkIconProps {
     icon: string;

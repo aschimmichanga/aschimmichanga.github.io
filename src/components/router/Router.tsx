@@ -1,10 +1,10 @@
-import { Dialog } from '@headlessui/react';
-import { lazy, Suspense, useState } from 'react';
+import { lazy, Suspense } from 'react';
 import { Outlet, RouteObject, useRoutes, BrowserRouter } from 'react-router-dom';
+import useCurrentSection from '../root/useCurrentSection';
+import Index from '../screens/Index';
 
 const Loading = () => <div className="p-4 w-full h-full text-center"><span className="loading loading-infinity loading-lg text-accent" /></div>;
 
-const IndexScreen = lazy(() => import('~/components/screens/Index'));
 const Page404Screen = lazy(() => import('~/components/screens/404'));
 
 function Layout() {
@@ -26,6 +26,7 @@ export const Router = () => {
 };
 
 const InnerRouter = () => {
+  useCurrentSection(['landing', 'experience']);
   const routes: RouteObject[] = [
     {
       path: '/',
@@ -33,7 +34,11 @@ const InnerRouter = () => {
       children: [
         {
           index: true,
-          element: <IndexScreen />,
+          element: <Index />,
+        },
+        {
+          path: 'section/:sectionId', // Route with parameter
+          element: <Index />,
         },
         {
           path: '*',

@@ -1,11 +1,11 @@
 import { Head } from "~/components/shared/Head";
-import astronautPlanet from '~/assets/astronaut-planet.svg';
+import astronautPlanet from '~/assets/astronauts/astronaut-planet.svg';
 
 
 function Page404() {
   return (
     <>
-      <Head title={'The page is not found'}></Head>
+      <Head title={'404'}></Head>
       <div className="h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-6xl font-bold mb-4">404</h1>

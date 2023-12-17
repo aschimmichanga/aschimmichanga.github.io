@@ -1,14 +1,18 @@
 import { Head } from '~/components/shared/Head';
-import myImage from './path/to/image.png';
 import Header from '../sections/Header';
-import Home from '../sections/Home';
+import Landing from '../sections/Landing';
+import Experience from '../sections/Experience/Experience';
 
 function Index() {
+  console.log("Index component is rendering");
   return (
     <>
-      <Head title="HOME PAGE" />
+      <Head title="🌠" />
       <Header />
-      <Home />
+      <div className="bg-space-background bg-cover bg-fixed bg-center min-h-screen relative">
+        <div id="landing"><Landing /></div>
+        <div id="experience"><Experience /></div>
+      </div>
     </>
   );
 }
