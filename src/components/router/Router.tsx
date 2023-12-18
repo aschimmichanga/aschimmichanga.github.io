@@ -26,7 +26,7 @@ export const Router = () => {
 };
 
 const InnerRouter = () => {
-  useCurrentSection(['landing', 'experience']);
+  useCurrentSection(['landing', 'experience', 'projects']);
   const routes: RouteObject[] = [
     {
       path: '/',

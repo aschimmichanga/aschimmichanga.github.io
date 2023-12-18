@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import * as Matter from 'matter-js';
 import DatadogBubble from '~/assets/bubbles/datadog_bubble.svg';
 import FigmaBubble from '~/assets/bubbles/figma_bubble.svg';

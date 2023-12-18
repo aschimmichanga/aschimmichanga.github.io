@@ -22,6 +22,15 @@ code {
     monospace;
 }
 
+img {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 .name-text-mask {
   background-image: url('assets/graffiti-mask.svg');
   -webkit-background-clip: text;
