@@ -21,7 +21,6 @@ function Landing() {
                 </div>
             </div>
             <img src={astronautImage} alt="Astronaut" className="absolute right-0 float-animation" style={{ width: '600px', height: 'auto', top: '90px' }} />
-
         </div>
     )
 }
