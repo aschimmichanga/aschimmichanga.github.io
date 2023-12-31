@@ -11,7 +11,7 @@ function Index() {
     <>
       <Head title="🌠" />
       <Header />
-      <div className="bg-space-background bg-cover bg-fixed bg-center min-h-screen relative">
+      <div className="bg-space-background bg-cover bg-fixed bg-center min-h-screen relative index-container">
         <div id="landing"><Landing /></div>
         <div id="experience"><Experience /></div>
         <div id="interests"><Interests /></div>

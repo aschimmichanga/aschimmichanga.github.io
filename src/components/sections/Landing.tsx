@@ -4,9 +4,6 @@ function Landing() {
     console.log("Landing has loaded")
     return (
         <div className="relative h-screen flex items-center justify-start pl-10 md:pl-20"> {/* Adjusted for full height and left alignment */}
-            <div className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-full">
-                <div className="w-[669px] h-[47px] bg-fuchsia-200 rounded-full blur-[200px]" />
-            </div>
             <div className='flex-col'>
                 <div className='flex-col text-3xl text-cloud-pink font-spicy-rice z-10 mt-[80px]'>
                     <div>👋 Hi I'm</div>

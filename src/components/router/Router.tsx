@@ -26,7 +26,6 @@ export const Router = () => {
 };
 
 const InnerRouter = () => {
-  useCurrentSection(['landing', 'experience', 'projects']);
   const routes: RouteObject[] = [
     {
       path: '/',
@@ -34,10 +33,6 @@ const InnerRouter = () => {
       children: [
         {
           index: true,
-          element: <Index />,
-        },
-        {
-          path: 'section/:sectionId', // Route with parameter
           element: <Index />,
         },
         {

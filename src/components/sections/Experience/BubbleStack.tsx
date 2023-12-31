@@ -69,7 +69,7 @@ function BubbleStack() {
 
             // Create left and right walls
             const wallThickness = 60;
-            const leftWall = Matter.Bodies.rectangle(-wallThickness / 2 + 10, 600, 1, renderer.options.height + 250, { isStatic: true, render: { fillStyle: 'transparent' } });
+            const leftWall = Matter.Bodies.rectangle(-wallThickness / 2 + 50, 600, 1, renderer.options.height + 250, { isStatic: true, render: { fillStyle: 'transparent' } });
             const rightWall = Matter.Bodies.rectangle(-wallThickness / 2 + 825, 600, 1, renderer.options.height + 800, { isStatic: true, render: { fillStyle: 'transparent' } });
 
             // Add bodies to the world
@@ -102,12 +102,21 @@ function BubbleStack() {
     return (
         <div ref={containerRef} id="matterContainer" className="relative h-screen">
             <div ref={sceneReference} className="absolute">
-                {/* SVGs positioned absolutely */}
-                <img src={DatadogBubble} id="bubble0" className="absolute" />
-                <img src={FigmaBubble} id="bubble1" className="absolute" />
-                <img src={FoxgloveBubble} id="bubble2" className="absolute" />
-                <img src={LinkedinBubble} id="bubble3" className="absolute" />
-                <img src={FlxderBubble} id="bubble4" className="absolute" />
+                <a href='https://www.datadoghq.com/' target="_blank">
+                    <img src={DatadogBubble} id="bubble0" className="absolute" />
+                </a>
+                <a href='https://play.google.com/store/apps/details?id=com.figma.mirror' target="_blank">
+                    <img src={FigmaBubble} id="bubble1" className="absolute" />
+                </a>
+                <a href='https://foxglove.dev/blog/announcing-insights-for-foxglove-data-platform' target="_blank">
+                    <img src={FoxgloveBubble} id="bubble2" className="absolute" />
+                </a>
+                <a href='https://techcrunch.com/2022/08/11/linkedin-tools-helping-creators-post-visual-content/' target="_blank">
+                    <img src={LinkedinBubble} id="bubble3" className="absolute" />
+                </a>
+                <a href='https://www.crunchbase.com/organization/flxder' target='_blank'>
+                    <img src={FlxderBubble} id="bubble4" className="absolute" />
+                </a>
             </div>
         </div>
     );
