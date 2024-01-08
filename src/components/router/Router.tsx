@@ -1,6 +1,5 @@
 import { lazy, Suspense } from 'react';
 import { Outlet, RouteObject, useRoutes, BrowserRouter } from 'react-router-dom';
-import useCurrentSection from '../root/useCurrentSection';
 import Index from '../screens/Index';
 
 const Loading = () => <div className="p-4 w-full h-full text-center"><span className="loading loading-infinity loading-lg text-accent" /></div>;

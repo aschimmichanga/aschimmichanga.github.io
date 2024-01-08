@@ -12,8 +12,6 @@ function InterestPill({ text }: { text: string }) {
 }
 
 function Interests() {
-
-
     return (
         <div className="h-screen w-screen flex-col items-center justify-start pt-20 md:pt-20  pl-20 md:pl-20 font-space-mono text-white">
             <div className="text-4xl">Always interested about..</div>

@@ -2,7 +2,7 @@ import { Head } from '~/components/shared/Head';
 import Header from '../sections/Header';
 import Landing from '../sections/Landing';
 import Experience from '../sections/Experience/Experience';
-import Projects from '../sections/Projects/Projects';
+import Reviews from '../sections/Reviews/Reviews';
 import Interests from '../sections/Interests/Interests';
 
 function Index() {
@@ -15,7 +15,7 @@ function Index() {
         <div id="landing"><Landing /></div>
         <div id="experience"><Experience /></div>
         <div id="interests"><Interests /></div>
-        {/* <div id="projects"><Projects /></div> */}
+        <div id="reviews"><Reviews /></div>
       </div>
     </>
   );
