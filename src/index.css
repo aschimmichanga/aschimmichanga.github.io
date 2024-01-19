@@ -11,7 +11,9 @@ html {
   overflow-y: auto;
 }
 
-html {
+html,
+button,
+img {
   scroll-behavior: smooth;
   cursor: url('assets/mouse.svg'), auto !important;
 }
