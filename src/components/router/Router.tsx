@@ -9,7 +9,7 @@ const Page404Screen = lazy(() => import('~/components/screens/404'));
 function Layout() {
   return (
     <div>
-      < nav className="p-4 flex items-center justify-between" >
+      < nav className="flex items-center justify-between" >
       </nav >
       <Outlet />
     </div >

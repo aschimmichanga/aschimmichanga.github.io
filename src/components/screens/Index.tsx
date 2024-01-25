@@ -4,6 +4,7 @@ import Landing from '../sections/Landing';
 import Experience from '../sections/Experience/Experience';
 import Reviews from '../sections/Reviews/Reviews';
 import Interests from '../sections/Interests/Interests';
+import Contact from '../sections/Contact';
 
 function Index() {
   console.log("Index component is rendering");
@@ -16,6 +17,7 @@ function Index() {
         <div id="experience"><Experience /></div>
         <div id="interests"><Interests /></div>
         <div id="reviews"><Reviews /></div>
+        <div id="contact"><Contact /></div>
       </div>
     </>
   );

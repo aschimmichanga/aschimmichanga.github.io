@@ -150,7 +150,3 @@ img {
   /* Slower speed for the dragon */
   filter: sepia(1000%) saturate(200%) brightness(205%) hue-rotate(235deg) contrast(1);
 }
-
-a:hover {
-  cursor: url('assets/circular_mouse_learn_more.svg'), auto;
-}
