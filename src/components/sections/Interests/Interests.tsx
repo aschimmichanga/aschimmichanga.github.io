@@ -1,14 +1,13 @@
-import { useEffect, useRef } from 'react';
 import astronautImage from '~/assets/astronauts/astronaut-rocket.svg';
 import dragonImage from '~/assets/dragon.gif';
 
-const INTERESTS = ["web dev", "Android", "Souls games", "indie games", "philosophy", "cooking", "mystery novels", "krnb", "Skyrim modding", "life hacks", "building cool sh*t"]
+const INTERESTS = ["web dev", "Android", "Souls games", "indie games", "philosophy", "cooking", "mystery novels", "krnb", "Skyrim modding", "life hacks", "makers", "art", "startups"]
 
 
-function InterestPill({ text }: { text: string }) {
-    return (<button className="btn btn-outline normal-case text-2xl rounded-2xl outline-4">
+function InterestPill({ text, accent = false }: { text: string, accent?: boolean }) {
+    return (<button className={"btn btn-outline normal-case text-2xl rounded-2xl outline-4" + (accent && " btn-accent")}>
         {text}
-    </button>);
+    </button >);
 }
 
 function Interests() {
@@ -17,6 +16,7 @@ function Interests() {
             <div className="text-4xl">Always interested about..</div>
             <div className="flex flex-wrap gap-5 mt-10">
                 {INTERESTS.map((interest) => <InterestPill key={interest} text={interest} />)}
+                <InterestPill text="the next big thing" accent />
             </div>
             <div className="flex gap-2 align-top move-left-animation">
                 <img src={astronautImage} alt="Astronaut" className="astronaut-rocket" style={{

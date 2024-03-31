@@ -28,12 +28,13 @@ const testimonials = [
 function Reviews() {
     return (
         <div className="h-screen w-screen flex-col items-center justify-start pt-20 md:pt-20  pl-20 md:pl-20 font-space-mono text-white">
-            <div className="text-4xl">Rave Reviews</div>
+            <div className="text-4xl md:pt-20 pt-0">Rave Reviews</div>
             <div className="h-[40rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden pt-0">
                 <InfiniteMovingCards
                     items={testimonials}
                     direction="right"
                     speed="normal"
+                    pauseOnHover={false}
                 />
             </div>
         </div>
