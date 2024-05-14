@@ -1,5 +1,4 @@
 import astronautImage from '~/assets/astronauts/astronaut-star.svg';
-import "~/components/ui/aurora.css"
 
 function Landing() {
     console.log("Landing has loaded")
