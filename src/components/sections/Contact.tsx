@@ -1,12 +1,13 @@
 import '~/components/ui/aurora.css';
 function Contact() {
     return (<div className="content">
-        <h1 className="title pt-72">hit my line
+        <h1 className="title pt-72">
+            hit my line
             <div className="aurora">
-                <div className="aurora__item"></div>
-                <div className="aurora__item"></div>
-                <div className="aurora__item"></div>
-                <div className="aurora__item"></div>
+                <div className="aurora__item" />
+                <div className="aurora__item" />
+                <div className="aurora__item" />
+                <div className="aurora__item" />
             </div>
         </h1>
         <div className='font-space-mono'>
