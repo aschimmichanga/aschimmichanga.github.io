@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.16",
+    "@rive-app/react-canvas": "^4.11.3",
     "clsx": "^2.1.0",
     "daisyui": "^2.52.0",
     "framer-motion": "^10.17.9",
